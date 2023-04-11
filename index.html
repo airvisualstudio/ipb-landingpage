@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Property Bandung</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="top-set">
+            <div class="share">
+                Link Share
+            </div>
+            <div class="profile">
+                <img src="img/profile/profile.jpg" alt="Info-Property-Bandung">
+
+                <div class="fullname">
+                    Info Property Bandung
+                </div>
+                <div class="bio">
+                    <p>Beli Rumah Jadi Mudah <strong>#SaatnyaBeliRumah</strong>
+                    <br>Wujudkan Mimpi Punya Rumah Dengan <strong>Promo DP 0%</strong> Untuk Perumahan Pilihan
+                    <br><strong> Konsultasi Beli Rumah</strong></p>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact-title">
+                    Follow Us on Social Media
+                </div>   
+                <div class="contact-wrapper">
+                    <div class="contact-button">
+                        <a href="#" target="_blank" rel="noopener noreferrer"> A </a>
+                    </div>
+                    <div class="contact-button">
+                        <a href="#" target="_blank" rel="noopener noreferrer"> A </a>
+                    </div>
+                    <div class="contact-button">
+                        <a href="#" target="_blank" rel="noopener noreferrer"> A </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- Gallery Perumahan -->
+            
+            <div class="gallery">
+                <div class="gallerywrapper">
+                    <div class="row">
+                        <div class="gallery-filter">
+                          <span class="filter-item active" data-filter="all">All</span>
+                          <span class="filter-item" data-filter="perumahan">Perumahan</span>
+                          <span class="filter-item" data-filter="secondary">Secondary</span>
+                          <span class="filter-item" data-filter="newunit">New Unit</span>
+                        </div>
+
+                        <div class="row">
+
+                            <!-- 1st gallery item start -->
+                            <div class="gallery-item shoe">
+                              <div class="gallery-item-inner">
+                                 <img src="img/gallery/nuansaasri/nuansaasri.webp" alt="shoe">
+                              </div>
+                            </div>
+                            
+                             
+                           <!-- 2nd gallery item start -->
+                            <div class="gallery-item newunit">
+                             <div class="gallery-item-inner">
+                               <img src="img/gallery/nuansaasri/nuansaasri.webp" alt="newunit">
+                             </div>
+                            </div>
+                                    
+                           <!-- 3rd gallery item start -->
+                            <div class="gallery-item perumahan">
+                             <div class="gallery-item-inner">
+                               <img src="img/gallery/nuansaasri/nuansaasri.webp" alt="perumahan">
+                             </div>
+                            </div>
+                                    
+                           <!-- 4th gallery item start -->
+                            <div class="gallery-item newunit">
+                             <div class="gallery-item-inner">
+                               <img src="img/gallery/nuansaasri/nuansaasri.webp" alt="newunit">
+                             </div>
+                            </div>
+                                
+                           <!-- 5th gallery item start -->
+                            <div class="gallery-item perumahan">
+                              <div class="gallery-item-inner">
+                                <img src="img/gallery/nuansaasri/nuansaasri.webp" alt="perumahan">
+                              </div>
+                            </div>
+                             
+
+                           </div>
+
+                       </div>
+                </div>
+            </div>
+    
+
+            <!-- End Gallery Perumahan -->
+
+            <!-- Links Session -->
+
+            <div class="links">
+                <div class="linkbutton">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Dapatkan Promo 1</a>
+                </div>
+                <div class="linkbutton">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Dapatkan Promo 1</a>
+                </div>
+                <div class="linkbutton">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Dapatkan Promo 1</a>
+                </div>
+                <div class="linkbutton">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Dapatkan Promo 1</a>
+                </div>
+            </div>
+
+        <!-- End Link Session -->
+
+        </div>
+    </div>
+    <script>
+
+
+        const filterContainer = document.querySelector(".gallery-filter"),
+        galleryItems = document.querySelectorAll(".gallery-item");
+       
+        filterContainer.addEventListener("click", (event) =>{
+          if(event.target.classList.contains("filter-item")){
+               // deactivate existing active 'filter-item'
+               filterContainer.querySelector(".active").classList.remove("active");
+               // activate new 'filter-item'
+               event.target.classList.add("active");
+               const filterValue = event.target.getAttribute("data-filter");
+               galleryItems.forEach((item) =>{
+              if(item.classList.contains(filterValue) || filterValue === 'all'){
+                  item.classList.remove("hide");
+                   item.classList.add("show");
+              }
+              else{
+                  item.classList.remove("show");
+                  item.classList.add("hide");
+              }
+               });
+          }
+        });
+       </script>
+
+</body>
+</html>
