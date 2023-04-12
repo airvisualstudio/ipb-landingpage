@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-html, 
-body
-{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* .container */
 
 .container {
-    width: 50%;
-    height: 100vh;
-    margin: auto;
-    background-color: aquamarine;
-
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+  /* background-color: aquamarine; */
 }
 
 /* end container */
@@ -23,71 +21,73 @@ body
 /* Top Set */
 
 .top-set {
-    width: 100%;
-    height: 350px;
-    background-color: blueviolet;
+  width: 100%;
+  height: 350px;
+  /* background-color: blueviolet; */
 }
 
 .share {
-    height: 70px;
-    background-color: blue;
-
+  height: 70px;
+  /* background-color: blue; */
 }
 
 .profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
-    height: auto;
-    background-color: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  height: auto;
+  /* background-color: brown; */
 }
 
 .profile img {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
 }
 
 .fullname {
-    margin-top: 1rem;
-    font-weight: bold;
+  margin-top: -10px;
+  font-weight: bold;
 }
 
 .bio {
-    text-align: center;
-    margin-left: 4rem;
-    margin-right: 4rem;
+  margin-top: -30px;
+  text-align: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  color: #b1b1b1;
 }
 
 .contact {
-    margin-top: 0;
-    background-color: aqua;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* background-color: aqua; */
 }
 
 .contact-title {
-    text-align: center;
-    font-weight: bold;
+  padding-top: 5px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .contact-wrapper {
-    display: flex;
-    justify-content: center;
-    background-color: aliceblue;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-button {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  margin-left: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
   background-color: #7f8d9e;
   color: #2d2f39;
   border: #7f8d9e;
   border-radius: 100%;
   align-content: space-between;
   cursor: pointer;
-  padding : .5rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
@@ -96,66 +96,207 @@ body
 /* Links */
 
 .links {
-    background-color:#7f8d9e;
-    height: 100vh;
-    padding: 2rem;
+  /* background-color: #7f8d9e; */
+  height: 100vh;
+  padding: 2rem;
+  margin-bottom: 30px;
+  background-color: #f3f3f3;
 }
 
 .linkbutton {
-    margin-top: .5rem;
-    margin-bottom: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
 }
 
 .linkbutton a {
-    margin-left: 4rem;
-    padding: 1rem 20rem;
-    background-color: #424447;
-    color: white;
-    text-decoration: none;
+  margin-left: 4rem;
+  padding: 1rem 20rem;
+  background-color: #eeeeee;
+  color: rgb(22, 22, 22);
+  text-decoration: none;
+  box-shadow: -3px 2px 9px -2px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: -3px 2px 9px -2px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -3px 2px 9px -2px rgba(0, 0, 0, 0.19);
 }
 
-.linkbutton a:hover {
-    margin-left: 4rem;
-    padding: 1rem 20rem;
-    background-color: #eef;
-    color:#424447;
-    text-decoration: none;
+/* .linkbutton a:hover {
+  margin-left: 4rem;
+  padding: 1rem 20rem;
+  background-color: #eef;
+  color: #424447;
+  text-decoration: none;
+} */
+
+ul.social-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+ul.social-set li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/* Font Awesome icons */
+a.sociali {
+  font-size: 2em;
+  line-height: 1.2em;
+  padding: 10px;
+  /* background: #accfc0; */
+  color: #041d3d;
+  margin-right: 10px;
+  margin-bottom: 10px !important;
+  padding-bottom: 10px !important;
+}
+a.sociali:hover,
+a.sociali:focus {
+  /* background: #6d8785; */
 }
 
 /* End Links */
 
 /* Gallery Perumahan */
 
-.gallery{
+.gallery {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+  margin-top: 5rem;
+  background-color: #f3f3f3;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding-top: 2rem;
+}
+.gallerywrapper {
+  /* max-width: 1170px; */
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .gallery-filter {
+  padding: 0 15px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.gallery .gallery-filter .filter-item {
+  color: #041d3d;
+  font-size: 17px;
+  border: 2px solid #041d3d;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  padding: 8px 20px 8px 20px;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+}
+.gallery .gallery-filter .filter-item.active {
+  color: white;
+  border-color: #041d3d;
+  background: #041d3d;
+}
+.gallery .gallery-item {
+  width: 40%;
+  padding: 10px;
+}
+.gallery .gallery-item-inner img {
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+}
+.gallery .gallery-item.show {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.gallery .gallery-item.hide {
+  display: none;
+}
+@media (max-width: 491px) {
+  .gallery .gallery-item {
+    width: 50%;
+  }
+}
+@media (max-width: 667px) {
+  .gallery .gallery-item {
     width: 100%;
-    display: block;
-    min-height: 100vh;
-    margin-top: 4rem;
-    background-color: #2a2932;
-    padding-top: 2rem;
-    
- }
- .gallerywrapper{
-    /* max-width: 1170px; */
-    margin:auto;
- }
- .row {
-    display: flex;
-	flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
- }
- .gallery .gallery-filter{
+  }
+  .gallery .gallery-filter .filter-item {
+    margin-bottom: 10px;
+  }
+}
+/* End Gallery Perumahan */
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    /* background-color: lightblue; */
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    /* background-color: aquamarine; */
+  }
+
+  .gallery {
+    margin-top: 6rem;
+  }
+
+  .linkbutton a {
+    margin-left: auto;
+    padding: 1rem 11rem;
+    background-color: #ffffff;
+    color: rgb(22, 22, 22);
+    text-decoration: none;
+    box-shadow: -3px 2px 9px -2px rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: -3px 2px 9px -2px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: -3px 2px 9px -2px rgba(0, 0, 0, 0.19);
+  }
+
+  .gallery .gallery-filter {
     padding: 0 15px;
     width: 100%;
     text-align: center;
     margin-bottom: 40px;
- }
- .gallery .gallery-filter .filter-item{
-    color: #ffffff;
-    font-size: 17px;
-    border: 2px solid white;
+  }
+  .gallery .gallery-filter .filter-item {
+    color: #041d3d;
+    font-size: 15px;
+    border: 2px solid #041d3d;
     text-transform: uppercase;
     display: inline-block;
     border-radius: 20px;
@@ -164,46 +305,14 @@ body
     padding: 8px 20px 8px 20px;
     line-height: 1.2;
     transition: all 0.3s ease;
- }
- .gallery .gallery-filter .filter-item.active{
-    color: white;
-    border-color : #16b5ef;
-    background: #16b5ef;
   }
-.gallery .gallery-item{
-	width: 40%;
-	padding: 10px;
+  .gallery .gallery-filter .filter-item.active {
+    color: white;
+    border-color: #041d3d;
+    background: #041d3d;
+  }
+  /* .gallery .gallery-item {
+    width: 40%;
+    padding: 10px;
+  } */
 }
-.gallery .gallery-item-inner img{
-	width: 100%;
-    border: none;
-    border-radius: 30px;
-}
-.gallery .gallery-item.show{
-	animation: fadeIn 0.5s ease;
-}
-@keyframes fadeIn{
-	0%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 1;
-	}
-}
-.gallery .gallery-item.hide{
-	display: none;
-}
-@media(max-width: 491px){
-	.gallery .gallery-item{
-		width: 50%;
-	}
-}
-@media(max-width: 667px){
-    .gallery .gallery-item{
-		width: 100%;
-	}
-	.gallery .gallery-filter .filter-item{
-		margin-bottom: 10px;
-	}
-}
-/* End Gallery Perumahan */
